@@ -5,9 +5,10 @@
     "noImplicitAny": true,
     "outDir": "./dist",
     "sourceMap": true,
-    "jsx": "react"
+    "jsx": "react",
   },
   "include": [
     "./src/*.ts",
+    "./src/*.tsx"
   ]
 }
