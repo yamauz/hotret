@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log(\"renderer\");\r\n\n\n//# sourceURL=webpack:///./src/renderer.tsx?");
+eval("console.log(\"renderer\");\n\n//# sourceURL=webpack:///./src/renderer.tsx?");
 
 /***/ })
 

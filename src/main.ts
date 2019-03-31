@@ -2,6 +2,7 @@ import { BrowserWindow, app, App } from "electron";
 import installExtension, {
   REACT_DEVELOPER_TOOLS
 } from "electron-devtools-installer";
+import webpackServer from "./webpack/webpack-server";
 
 const isDev = process.env["NODE_ENV"] === "development";
 
@@ -33,7 +34,7 @@ class ElectronTest {
 
     if (isDev) {
       // Load index.html via webpack dev server.
-      require("./webpack-server.js");
+      webpackServer();
       this.mainWindow.loadURL("http://localhost:3000/index.html");
 
       // Open the DevTools.
